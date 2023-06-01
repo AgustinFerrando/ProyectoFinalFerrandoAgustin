@@ -1,0 +1,83 @@
+<!-- Proyecto Final JS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+	<title>Proyecto Final js</title>
+</head>
+<body>
+	
+	<h1>¡Bienvenido a la Página de Compras!</h1>
+	<p id="ageMessage">Recuerda que para seguir en la página, debes ser mayor de edad.</p>
+	<label for="ageInput">Edad:</label>
+	<input type="text" id="ageInput"><br>
+	<button id="verifyAgeBtn">Verificar Edad</button>
+	
+	
+	<div id="formSection" style="display: none;">
+		<h2>Ingrese sus datos</h2>
+		<label for="nameInput">Nombre:</label>
+		<input type="text" id="nameInput"><br>
+		<button id="submitNameBtn">Enviar</button>
+	</div><br>
+	
+	<div id="paymentSection" style="display: none;">
+		<h2>Forma de Pago</h2>
+		<label for="paymentMethod">Forma de pago:</label>
+		<select id="paymentMethod">
+			<option value="">Seleccione</option>
+			<option value="efectivo">Efectivo</option>
+			<option value="cuotas">Cuotas</option>
+		</select><br>
+		<h2>Ingrese monto:</h2>
+		<label for="nameInput2">Monto sin puntos:</label>
+		<input type="text" id="nameInput2"><br>
+	
+		<div id="cuotasSection" style="display: none;">
+			<label for="cuotas">Cantidad de cuotas:</label>
+			<select id="cuotas">
+				<option value="">Seleccione</option>
+				<option value="3">3 cuotas</option>
+				<option value="6">6 cuotas</option>
+				<option value="12">12 cuotas</option>
+			</select><br>
+		</div>
+	
+		<div id="tarjetaSection" style="display: none;">
+			<label for="tarjetaNumero">Número de tarjeta:</label>
+			<input type="text" id="tarjetaNumero"><br>
+			<label for="tarjetaVencimiento">Fecha de vencimiento (MM/AA):</label>
+			<input type="text" id="tarjetaVencimiento"><br>
+			<label for="tarjetaCVV">Código de seguridad (CVV):</label>
+			<input type="text" id="tarjetaCVV"><br>
+			<label for="tarjetaTitular">Nombre del titular de la tarjeta:</label>
+			<input type="text" id="tarjetaTitular"><br>
+		</div>
+	
+		<button id="submitPaymentBtn">Pagar</button>
+	</div>
+	
+	
+	<div id="resultSection" style="display: none;">
+		<h2>Resultado de la compra</h2>
+		<p id="priceResult"></p>
+		<p id="installmentsResult"></p>
+		<p id="cardInfo"></p>
+		<p id="namesList"></p>
+        <p id="apiplace"></p>
+	</div>
+
+    <!-- Sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Sweet alert -->
+	
+    <!-- JS -->
+	<script src="./main.js"></script>
+    <!-- JS -->
+
+</body>
+</html>
